@@ -21,5 +21,5 @@ console.log("endereco", endereco);
 /* aula 10# */
 
 let nando = "fernando"; // e utilizada dentro do contexto que foi criada
-var nando = "fernando"; // funciona em qualquer contexto pondendo ser usada em outras variaveis
-const nando = "fernando";// essa variavel se torna contante , nao pode ser alterada
+var nand0 = "fernando"; // funciona em qualquer contexto pondendo ser usada em outras variaveis
+const nand1 = "fernando";// essa variavel se torna contante , nao pode ser alterada
