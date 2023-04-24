@@ -23,3 +23,6 @@ console.log("endereco", endereco);
 let nando = "fernando"; // e utilizada dentro do contexto que foi criada
 var nand0 = "fernando"; // funciona em qualquer contexto pondendo ser usada em outras variaveis
 const nand1 = "fernando";// essa variavel se torna contante , nao pode ser alterada
+
+var chefe = "silvio";
+console.log("nome do chefe", chefe)
