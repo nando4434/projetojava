@@ -115,4 +115,101 @@ let aduldo = idade>=18 && idade<60;
 if(adulto){
     console.log("E ADULTO");
 }
-//parei na #19
+//condicional ternaria
+
+
+let membro = true
+let promocao = membro ? 20 : 0;
+
+console.log(promocao);
+
+// outro exemplo
+
+console.log(membro ?"voce e membro" : "voce nao e membro");
+console.log("desconto aplicado"+ " " + promocao);
+
+// #20 switch
+
+let proficao = "medico";
+
+switch(proficao){
+    case 'medico':
+    console.log("uniforme branco")
+    break;
+
+    case 'pedreiro':
+        console.log("sem uniforme")
+    break;
+
+    case 'policial':
+        console.log("portar a quad")
+    break;
+
+    default: // se caso nenhuma for satisfeita esse "padrao" sera usado
+        console.log("uniforme padrao")
+        break;
+}
+
+// java escrip basico #4 passando parametros de funcoes
+
+
+function operador (n1,n2 ){// essas variavei n1 e n2 só existe dentro dessa função , agr cabe a voce atribuir valor a elas
+    resultado = n1+n2;
+    console.log("esse e o resultado"+ resultado);
+
+}
+operador(10,12);
+operador(25,55); // aki voce ja roda a funçaõ pronta
+
+
+//armazenando valor da function
+
+function nomeCompleto(ex1,ex2){
+    return ex1 + ex2;
+}
+
+let resultado = nomeCompleto(12,15);
+console.log(resultado);
+
+
+// funçaõ com retorno condicional
+
+
+function aprovado(idade){
+    if(idade >= 18){
+        return true;
+    }else {
+        return false;
+    }
+} 
+let idade = 19;
+
+let idadeCompleta = aprovado(idade);
+
+if (idadeCompleta === true){
+    console.log("voce e adulto")
+}
+
+if (idadeCompleta === false){
+    console.log("voce e menor de idade")
+}
+// segundo jeito de fazer
+
+function aprovado(idade){
+    if(idade >= 18){
+        return true;
+    }else {
+        return false;
+    }
+} 
+let idade = 19;
+
+let idadeCompleta = aprovado(idade);
+
+if (idadeCompleta === true){
+    console.log("voce e adulto")
+}else{
+    console.log("menor de idade")
+}
+//exercicio
+
