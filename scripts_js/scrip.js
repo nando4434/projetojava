@@ -213,3 +213,54 @@ if (idadeCompleta === true){
 }
 //exercicio
 
+function calcularValorImovel(quartos,metragem){
+    let m2 = 3000;
+    let preco = 0;
+
+    switch(quartos){
+        case 1:
+            default:
+            preco = metragem * m2;
+           
+        break;
+
+        case 2:
+            preco = metragem * (m2 * 1.3);
+        break;
+
+        case 3:
+            preco = metragem * (m2 * 1.5);
+        break;
+
+    }
+    return preco;
+}
+let quartos = 3;
+let metragem = 200;
+
+let valorFinal = calcularValorImovel(quartos,metragem);
+console.log(valorFinal);
+
+
+// validando senhas
+
+function validarUsuario(usuario,senha){
+    if(usuario === 'pedro' && senha === '123'){
+       
+        return true; 
+    }else{
+        
+        return false; 
+    }
+}
+
+let usuario = 'pedro';
+let senha = '123';
+
+let validando = validarUsuario(usuario,senha);
+
+if (validando === true){
+    console.log("login efetuado")
+} else{
+    console.log("senha ou usuario errado");
+}
