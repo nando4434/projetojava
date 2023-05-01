@@ -1,5 +1,4 @@
 
-
 let nome ="fernando";
 let idade = 26;
 
@@ -264,3 +263,97 @@ if (validando === true){
 } else{
     console.log("senha ou usuario errado");
 }
+
+
+
+// arrow function
+
+
+
+
+const calclucros = (on,instalacao,trabalhos) => {
+
+    let valortotal = 0;
+
+    if(on === true){
+
+        valortotal = (instalacao + trabalhos) * 1.2;
+        return valortotal;
+
+    }else {
+        valortotal = "nao trabalhou vagal"
+        return valortotal;
+    }
+
+
+}
+
+let on = true;
+let instalacao = 110;
+let trabalhos = 15;
+
+let lucros = calclucros(on,instalacao,trabalhos);
+console.log("lucros totai:" + lucros);
+
+
+// variaveis dentro e fora de funcoes
+// se tiver uma valiavel fora da funcao com o nome "exemplo " esse variavel e global e voce pode utilizar ela  dentro da funcao ,
+//porem se vc criar outra variavel com o nome exemplo dentro da funcao , entao ela se torna local e so vai poder ser usada dentro da funcao
+/////--------------//--------------------/////-----------------------------///--------------------------------------------------------------------
+
+
+
+
+//funcao dentro de funcao
+
+
+const raix = (x)=>{
+
+    return x * x;
+}
+function somar (a,b){
+
+   let rai1 = raix(a);
+   let rai2 = raix(b);
+   return rai1 + rai2;
+}
+console.log(somar(5,5))
+
+// exemplo 2
+
+function somar (a,b){
+
+    const raix = (x)=>{
+
+        return x * x;
+    }
+
+    let rai1 = raix(a);
+    let rai2 = raix(b);
+    return rai1 + rai2;
+ }
+ console.log(somar(5,5))
+
+// array
+
+let colors = ['blue','green','black','nando','jose' ]
+
+console.log(colors[1]);
+
+// exemplo 2 array dentro de outro array
+
+
+let colors = ['blue','green','black',['nando','jose']] //array dentro de outro array para acessar voce faz o seguinte
+//voce seleviona a posicao do array e dps a posicao do inten dentro do array
+
+console.log(colors[3][0]);
+
+
+
+
+
+
+
+
+
+
