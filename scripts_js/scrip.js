@@ -414,12 +414,72 @@ personagem.olhos.push('verde')// adicionei um atributo no array dentro do objeto
 
 console.log(personagem.caracteristicas.forca);
 
-// parei na aula 17 favor voltar nelaS
+
+// aula 17 acessando e alterando dados do objeto
+
+let personagem = { 
+    nome:'fernando',
+    idade:90,
+    pai:'brasil' ,
+
+    olhos:['preto','azul'],
+
+    caracteristicas:{
+
+        forca: 20 ,
+        magia: 5,
+        stamina: 15,
+
+    }
+}
+
+personagem.olhos[1] = 'preto'
+console.log(personagem.olhos[1])
+
+personagem.caracteristicas.forca += 5; // acrescentei o valor
+
+console.log(personagem.caracteristicas.forca)
+
+//acessando arrays dentro do objeto
+
+let gangue = {
+    nome:'malandros',
+    numero:4,
+    carros:[
+        {modelo:'fiat', cor: 'preto'},// cada chave representa 1 objeto
+        {modelo:'ford', cor: 'azul'},
+        {modelo:'chevrole', cor: 'cinza'},
+        {modelo:'jaguar', cor: 'vermelho'},
+
+    ]
+}
 
 
+console.log(gangue.carros[1]);// dessa maneira voce acessa os itens do array que esta dentro do objeto 
+console.log(gangue.carros[3].cor);
+console.log(gangue.carros[2].modelo);
 
 
+// funcao dentro de objeto
 
+let pessoa= {
+    nome :'fernando',
+    idade:26,
+    sobreNome:'silva',
+    nomeCompleto:function(){
+        return this.nome + this.sobreNome //this ele pega a funcao atua em que ele se encontra e atravez disso voce encontra as variaveis e funcoes e arrayz,etc
+    }
+}
+console.log(pessoa.nomeCompleto());
+
+//loop for
+// N = inicio do contador
+//N =<10 se n for menor que 10 , entao continue executando
+// N++ ACRESCENTA 1 EM CADA VEZ QUE ELE DAR UMA VOLTA
+
+for(let n = 0;n <3 ;n++){
+    console.log(n)
+}
 
 
 
