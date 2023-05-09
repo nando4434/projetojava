@@ -1,4 +1,6 @@
 
+
+
 let nome ="fernando";
 let idade = 26;
 
@@ -485,3 +487,31 @@ for(let n = 0;n <3 ;n++){
 
 
 
+
+let numero = 0;
+
+while(numero < 10){ // enquanto o numero for menor que 0 esse codigo vai ficar executando 
+    console.log('esse e o numero'+numero)
+    numero++; // acrescenta um numero cada vez que o codigo for executado
+}
+
+let fruit = ['maca','goiaba','pera','maca','goiaba','pera'];
+for (let x in fruit) {
+    console.log(fruit[x]);
+
+}
+
+let number = 0 ;
+
+while(number <= 100){
+    console.log(number)
+    number++
+}
+
+// funcoes de array 
+
+let frutas = ['maca','goiaba','pera','maca','goiaba','pera']
+ frutas.push('jamanta'); // adiciona item no array
+ frutas.pop();//remove o ultimo item no array
+ frutas.shift();//remove o primeiro item no array
+ console.log(frutas);
