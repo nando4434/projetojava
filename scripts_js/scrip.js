@@ -515,3 +515,85 @@ let frutas = ['maca','goiaba','pera','maca','goiaba','pera']
  frutas.pop();//remove o ultimo item no array
  frutas.shift();//remove o primeiro item no array
  console.log(frutas);
+
+
+ //ordenacoes de arrays
+
+
+
+ let fruitss = ['maca','goiaba','pera','maca','goiaba','pera'];
+
+ fruitss.sort()// ele ordena de forma crescente 
+ fruitss.reverse()// ele reverte ou seja combinado com o sort voce deixa de forma crescente e quando ele inverte vira decrescente
+
+
+ let cars = [
+    {brand:'fiat',year:2002},
+    {brand:'honda',year:2029},
+    {brand:'mercedez',year:1996},
+    {brand:'bmw',year:2000},
+ ]
+  // o sort consegue ser usado para pegar valores dentro de arrays e e possivel usalo como especie de funcao para alterar diratamente o array
+
+
+  cars.sort( (a,b) =>{ // criar uma funcao dentro do sort
+    if(a.year > b.year){// nesse caso o a representa o primeiro indice e b o segundo indice 
+        return 1; // ou seja ele adianta uma casa 'indice' no array alterando a ordem que ele esta
+    }else if (a.year < b.year){
+        return - 1 ; //retrocede a casa dessa forma eles vao se ajustando ate que a ordem fique do menor para o maior ou maior para o menor
+
+    } else{
+        return 0; // caso esteja na posicao corre ele nao altera a posicao
+    }
+  }
+  )
+  // esse codigo vai rodar varias vezes pegando todos os itens em 2 em 2 ate organizar tudo e deixar na ordem
+
+  console.log(cars)
+  let fruits = ['pera', 'melancia', 'tomate','uva'];
+
+
+  //iteracao de array 1
+
+  //filter() ele vai filtrar aqui que vc determinar
+
+  let bigfruits = fruits.filter((item)=>{// voce deve guardar as informacoes filtradas dentro de uma variavel // ele selecionou o fruit com o filter apartir desse ponto o length esta pegando diretamente o item de cada indice
+    return item.length > 4; // ele ira passar cada item passar por eles , ver quantas letras tem e verificar se e maior que 3 letras
+    }
+  )
+
+console.log(bigfruits)
+
+/* every() retorna valor booleano verdadeiro ou falso ela so 
+retorna verdadeiro se todas as condicoes que vc fez dentro dela 
+for verdadeira */
+
+let ok = fruits.every((b)=>{ // aqui ele ta verificando se todas as frutas temais que 3 letras
+    return b.length >3;
+}
+)
+if(ok == true){
+    console.log('TODOS TEM MAIS QUE 3 LETRAS')
+}else{
+    console.log(' nao sao todos que tem mais de 3 letras')
+}
+
+// some ' algum ' ele tambem retorna valor booleano porem ele retorna true se algum valor satisfazer a condicao , nao precisa ser todas as condicoes satisfeita
+
+let ok = fruits.some((b)=>{ // aqui ele ta verificando se todas as frutas temais que 3 letras
+    return b.length >3;
+}
+)
+if(ok == true){
+    console.log('TODOS TEM MAIS QUE 3 LETRAS')
+}else{
+    console.log(' nao sao todos que tem mais de 3 letras')
+}
+
+// includes ele ira procurar aquele item dentro do array
+ 
+if(fruits.includes('uva')){
+    console.log('tem uva')
+}else{
+    console.log('nao tem uva')
+}
