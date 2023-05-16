@@ -596,4 +596,56 @@ if(fruits.includes('uva')){
     console.log('tem uva')
 }else{
     console.log('nao tem uva')
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// dooooommmmmmmmm
+document.getElementsByTagName("h1") //dessa forma selecionamos os itens html atraves do nome da tag
+document.getElementById("exemplo_do_id")// dessa forma vc seleciona certinho o id que deseja
+document.getElementsByClassName("nome_classe")// voce seleciona utilizando a classe dele
+document.querySelector(".exemplo")// dessa forma voce seleciona utilizzando o dominio do item que voce deseja , ou seja voce seleciona ele como se vc fosse fazer no css
+document.querySelector("#exemplo")// exemplo 2
+document.querySelectorAll(".exemplo")//seleciona todos os itens daquela classe
+document.querySelectorAll(".exemplo ul li")// desse forma eu entro dentro de uma lista que esta dentro da classe
+
+
+//evento de clique DOOOOOOOMMMM
+
+function  clicou2 (){
+    console.log("clicou")
+}
+
+//manipulando elemento
+
+
+function clicou1(){ // voce seleciona a classe que deseja
+    const teste = document.querySelector(".number1");
+    console.log(teste);
+}
+
+
+function clicou3(){ // dessa forma voce altera os itens do html 
+    const teste = document.querySelector(".number1");
+    teste.innerHTML = "novo item alterado";
+}
+
+
+function clicou4(){ // dessa forma voce adiciona um item 
+    const teste = document.querySelector(".number1");
+    teste.innerHTML += "novo item adicionado";
 }
