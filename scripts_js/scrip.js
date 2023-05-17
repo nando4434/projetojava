@@ -653,4 +653,62 @@ function clicou5(){
     ul.after('<buttom>botal</button>')// dessa forma voce adiciona o conteudo apos o ul 
  
  }
+  
+
+ //manipulando atributos
+
+function clicou(){
+    const input = document.querySelector('input');//vocce pega o input
+    console.log(input.getAttribute('type')) // pega o atributo especifico dentro do type pode ser:(values,type,name) tudo que tem dentro do input
  
+ }
+ //
+ 
+ function clicouHAS(){
+    const input = document.querySelector('input');//vocce pega o input
+    
+ 
+    if(input.hasAttribute('placeholder')){ //o hasAtrribute retorna um valor booleano nesse caso ele ta verificando se possui placeholder no input
+ 
+       console.log('possui place')
+    }else{
+       console.log('nao possui place')
+    }
+ 
+ 
+ }
+ 
+ 
+ function clicouSET(){
+    const input = document.querySelector('.senha');//vocce pega o input
+   input.setAttribute('type','text')// o set ele manipula oque ja existe e altera seu valores p primeiro campo " 'placeholder' " seria o campo que sera alterado e o segundo campo 'placeholder alterado' seria o novo valor
+ // nesse exemplo o usuario colocou a senha e eu transformei o type(password) em (text) dessa forma ele exibe a senha do usuario ao executar a funcao
+ }
+ 
+ function clicouSET2(){
+    const input = document.querySelector('.senha1');//vocce pega o input
+    const value = document.querySelector('.senha');
+ 
+    if(input.getAttribute('type')=== 'text'){
+       input.setAttribute('type','password')
+       value.setAttribute('value','mostrar senha')
+    }
+       else{
+          input.setAttribute('type','text')
+          value.setAttribute('value','ocultar senha')
+          
+       }
+    } //nesse comando voce consegue ir trocando ao clicar de password para text
+    // e altero ao msm tempo o value
+ 
+ // manipulando css
+ 
+ function clicouCSSINLINE(){
+    
+    const li = document.querySelector('.lista ul li');
+ 
+    li.style.backgroundColor = 'blue';// dessa forma voce altera diretamente o css 
+    li.style.fontSize = '30px';// a cada fim de palavra exemplo fontSize voce deve colocar a primeira letra maiuscula nesse caso o fontsize existe tbm o fontWight por esse motivo a primeira letra deve ser maiuscula para especificar qual modelo sera usado
+    
+   
+ }
