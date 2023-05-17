@@ -601,19 +601,6 @@ if(fruits.includes('uva')){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // dooooommmmmmmmm
 document.getElementsByTagName("h1") //dessa forma selecionamos os itens html atraves do nome da tag
 document.getElementById("exemplo_do_id")// dessa forma vc seleciona certinho o id que deseja
@@ -649,3 +636,21 @@ function clicou4(){ // dessa forma voce adiciona um item
     const teste = document.querySelector(".number1");
     teste.innerHTML += "novo item adicionado";
 }
+
+//manipulando elemento 2
+
+function clicou5(){
+    const teste = document.querySelector('.lista');// dessa forma eu armazeno o caminho da lista e seleciono o elemnto lista
+    const ul = teste.querySelector('ul');// dessa forma eu armazeno o ul do (teste) ja que o teste esta armazenando o valor da lista
+    ul.children[0].append("alterado")// o children armazena os valores contido dentro do elemento ou sena os 'li' e e possivel passar os ele mentos como indices
+ //o append adiciona conteudo que ja existe dentro de um elemento
+ }
+ // manipulando elementos 3
+ 
+ function clicou6(){
+    const teste = document.querySelector('.lista');// dessa forma eu armazeno o caminho da lista e seleciono o elemnto lista
+    const ul = teste.querySelector('ul');// dessa forma eu armazeno o ul do (teste) ja que o teste esta armazenando o valor da lista
+    ul.after('<buttom>botal</button>')// dessa forma voce adiciona o conteudo apos o ul 
+ 
+ }
+ 
