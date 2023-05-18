@@ -712,3 +712,28 @@ function clicou(){
     
    
  }
+
+
+ 
+//acrescentando classes / trabalhando com classes
+
+function clicouColor(){
+   const button = document.querySelector('.lista ul li')
+   button.classList.add('black'); // voce acrescenta uma nova classe no atributo
+}
+function clicouColor1(){
+   const button = document.querySelector('.lista ul li')
+   button.classList.remove('black'); // voce remove uma  classe no atributo
+}
+
+function clicouColor2(){
+   const button = document.querySelector('.lista ul li')
+   button.classList.toggle('black') // esse ja e um comando pronto , ao clicar ele adiciona e se clicar dnv ele remove
+}
+
+function clicouColor3(){
+   const button = document.querySelector('.lista ul li')
+   button.classList.replace('black','verde') // esse ja e um comando pronto , ao clicar ele troca o black pelo verde
+}
+
+//eventos de teclado
